@@ -26,7 +26,7 @@ function App() {
 
     const getWeather = (e: any) => {
         e.preventDefault();
-        fetch("http://api.weatherapi.com/v1/current.json?key=f8ec40636e214bbca9c74618210208&q=London&aqi=no")
+        fetch(`http://api.weatherapi.com/v1/current.json?key=f8ec40636e214bbca9c74618210208&q=${city}&aqi=no`)
             .then(res => res.json())
             .then(data => {
                 setResults({
