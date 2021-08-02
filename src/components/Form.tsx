@@ -1,4 +1,7 @@
+import {useState} from "react";
+
 const Form = ()=>{
+    const [city,setCity]=useState("");
     return(
         <form action="">
             <input type="text" name="city" placeholder="都市名"/>
