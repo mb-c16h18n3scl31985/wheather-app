@@ -1,6 +1,6 @@
 const Title = ()=>{
     return(
-        <h1>WORLD WHETHER</h1>
+        <h1>WORLD Weather</h1>
     );
 };
 
