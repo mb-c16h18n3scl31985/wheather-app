@@ -1,6 +1,7 @@
 type FormPropsType = {
     setCity: React.Dispatch<React.SetStateAction<string>>;
     getWeather: (e: React.FormEvent<HTMLFormElement>) => void;
+    city: string
 }
 const
     Form: React.FC<FormPropsType> = ({setCity,getWeather}: FormPropsType) => {
