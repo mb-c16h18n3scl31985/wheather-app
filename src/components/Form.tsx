@@ -4,7 +4,7 @@ type FormPropsType = {
     city: string
 }
 const
-    Form: React.FC<FormPropsType> = ({setCity,getWeather}: FormPropsType) => {
+    Form: React.FC<FormPropsType> = ({setCity,getWeather,city}: FormPropsType) => {
         return (
             <form onSubmit={getWeather}>
                 <input type="text" name="city" placeholder="都市名" onChange={e => setCity(e.target.value)}/>
